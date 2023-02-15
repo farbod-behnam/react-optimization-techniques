@@ -1,10 +1,11 @@
+import React from "react";
 import { ComponentPropsWithoutRef } from "react"
 import classes from './Button.module.css';
 
 interface Props extends ComponentPropsWithoutRef<"button"> {
 }
 
-export default function Button(props: Props) {
+function Button(props: Props) {
 
     console.log("Button RUNNING");
     
@@ -20,3 +21,5 @@ export default function Button(props: Props) {
         </button>
     )
 }
+
+export default React.memo(Button);
