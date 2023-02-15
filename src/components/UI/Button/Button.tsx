@@ -1,10 +1,14 @@
-import { ComponentPropsWithoutRef, ReactNode } from "react"
+import { ComponentPropsWithoutRef } from "react"
 import classes from './Button.module.css';
 
 interface Props extends ComponentPropsWithoutRef<"button"> {
 }
 
 export default function Button(props: Props) {
+
+    console.log("Button RUNNING");
+    
+
     return (
         <button
             type={props.type || 'button'}
